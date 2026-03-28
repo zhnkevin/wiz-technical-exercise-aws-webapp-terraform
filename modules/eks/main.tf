@@ -1,2 +1,2 @@
-//Done manually through console 
-//Prioritized a working demo over full IaC coverage
+//Done manually through AWS console 
+//Prioritized a working demo over fully writing Terraform code for every component 

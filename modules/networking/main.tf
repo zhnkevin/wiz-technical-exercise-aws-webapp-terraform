@@ -8,7 +8,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-// Two public and two private subnets in us-west-2
+// Two public and two private subnets in us-west-2, EKS tags added for EKS auto-mode. 
 resource "aws_subnet" "public_1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
@@ -17,6 +17,7 @@ resource "aws_subnet" "public_1" {
 
   tags = {
     Name = "web-app-public-us-west-2a"
+    "kubernetes.io/role/elb" = 1
   }
 }
 
@@ -28,6 +29,7 @@ resource "aws_subnet" "public_2" {
 
   tags = {
     Name = "web-app-public-us-west-2b"
+    "kubernetes.io/role/elb" = 1
   }
 }
 
@@ -38,6 +40,7 @@ resource "aws_subnet" "private_1" {
 
   tags = {
     Name = "web-app-private-us-west-2a"
+    "kubernetes.io/role/internal-elb" = 1
   }
 }
 
@@ -48,6 +51,7 @@ resource "aws_subnet" "private_2" {
 
   tags = {
     Name = "web-app-private-us-west-2b"
+    "kubernetes.io/role/internal-elb" = 1
   }
 }
 

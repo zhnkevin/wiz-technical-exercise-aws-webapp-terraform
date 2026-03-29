@@ -18,3 +18,7 @@ module "ec2_mongodb" {
   s3_backup_bucket      = module.s3.bucket_name
   instance_profile_name = module.iam.instance_profile_name
 }
+
+module "ecr" {
+    source = "./modules/ecr"
+}

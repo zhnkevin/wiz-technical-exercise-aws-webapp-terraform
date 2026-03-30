@@ -53,6 +53,7 @@
 - Install on Red Hat: https://www.mongodb.com/docs/v6.0/tutorial/install-mongodb-on-red-hat/
 - Enable authentication: https://www.mongodb.com/docs/v6.0/tutorial/enable-authentication/
 - Configuration options: https://www.mongodb.com/docs/v6.0/reference/configuration-options/#std-label-configuration-options
+- Backup Script: https://oneuptime.com/blog/post/2026-01-25-mongodb-mongodump-backup/view
 
 ## EKS
 ## EKS

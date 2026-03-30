@@ -4,7 +4,7 @@ Terraform infrastructure for a two-tier web application deployed on AWS that is 
 
 ## Architecture
 
-[ARCHITECTURE DIAGRAM GOES HERE EVENTUALLY]
+![Architecture Diagram](ArchitectureDiagram.png)
 
 Internet --> ALB --> EKS --> Todo App --> MongoDB on EC2 --> S3 Backups
 

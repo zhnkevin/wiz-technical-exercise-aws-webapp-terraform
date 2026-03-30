@@ -10,7 +10,6 @@ terraform {
     bucket = "terraform-state-940482447333-us-west-2-an"
     key = "wiz-technical-exercise/terraform.tfstate"
     region = "us-west-2"
-    profile = "Wiz"
     use_lockfile = true
   }
 
@@ -19,8 +18,6 @@ terraform {
 
 provider "aws" {
   region = "us-west-2"
-  profile = "Wiz"
-
   default_tags {
   tags = {
     env = "prod"
